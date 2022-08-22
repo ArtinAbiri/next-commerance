@@ -1,5 +1,6 @@
 import 'tailwindcss/tailwind.css'
 import 'swiper/swiper.scss'
+import './global.css'
 import 'swiper/components/navigation/navigation.scss'
 import 'swiper/components/pagination/pagination.scss'
 import Layout from '../components/Layout'
@@ -8,7 +9,7 @@ import { useRouter } from 'next/router'
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter()
-  
+
   return (
     <ShopProvider>
       <Layout>

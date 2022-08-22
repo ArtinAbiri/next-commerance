@@ -22,8 +22,10 @@ export default function Home({ products }) {
         <meta property="og:locale" content="en_US" />
         <meta property="og:site_name" content="Modern eCommerce Course" />
       </Head>
+      <div className='flex flex-col'>
       <Hero />
       <ProductList products={products} />
+      </div>
     </div>
   )
 }

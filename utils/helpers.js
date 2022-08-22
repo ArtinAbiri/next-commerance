@@ -1,5 +1,5 @@
-export const formatter = new Intl.NumberFormat('en-US', {
+export const formatter = new Intl.NumberFormat('SV', {
   style: 'currency',
-  currency: 'USD',
+  currency: 'SEK',
   minimumFractionDigits: 2
 })

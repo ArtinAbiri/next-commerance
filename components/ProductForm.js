@@ -38,7 +38,7 @@ export default function ProductForm({ product }) {
       id: variant.node.id,
       title: product.title,
       handle: product.handle,
-      image: variant.node.image?.originalSrc,
+      image: variant.node.image?.transformedSrc,
       options: allOptions,
       variantTitle: variant.node.title,
       variantPrice: variant.node.priceV2.amount,
@@ -105,7 +105,7 @@ export default function ProductForm({ product }) {
         product.options.map(({ name, values }) => (
           <ProductOptions
             key={`key-${name}`}
-            name={name}
+            name={'Antal'}
             values={values}
             selectedOptions={selectedOptions}
             setOptions={setOptions}
